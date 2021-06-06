@@ -27,21 +27,21 @@ function App() {
           if (!correctLetters.includes(letter)) {
             setCorrectLetters((currentLetters) => [...currentLetters, letter]);
           } else {
-            show(setShowNotification);
+            // show(setShowNotification);
           }
         } else {
           if (!wrongLetters.includes(letter)) {
             setWrongLetters((currentLetters) => [...currentLetters, letter]);
           } else {
-            show(setShowNotification);
+            // show(setShowNotification);
           }
         }
       }
-    }
+    };
     window.addEventListener('keydown', handleKeydown);
 
-     return () => window.removeEventListener('keydown', handleKeydown);
-  })
+    return () => window.removeEventListener('keydown', handleKeydown);
+  }, [correctLetters, wrongLetters, playable]);
 
   return (
     <>
