@@ -3,10 +3,10 @@ Hang Man Game Build Using Modern React concepts like hooks, functional component
 
 
 
-#ScreenShot of the Output 
+# ScreenShot of the Output 
 
 
-#Start Menu of the Game
+# Start Menu of the Game
 
 
 ![hangman](https://user-images.githubusercontent.com/70085321/120995114-d3635b00-c7a4-11eb-988f-27040a1a3253.PNG)
@@ -16,7 +16,7 @@ Hang Man Game Build Using Modern React concepts like hooks, functional component
 
 
 
-#GamePLay of Hang Man
+# GamePLay of Hang Man
 
 
 
@@ -27,7 +27,7 @@ Hang Man Game Build Using Modern React concepts like hooks, functional component
 
 
 
-#Winning Conditions
+# Winning Conditions
 
 
 
@@ -40,7 +40,7 @@ Hang Man Game Build Using Modern React concepts like hooks, functional component
 
 
 
-#Losing Conditions
+# Losing Conditions
 
 
 
