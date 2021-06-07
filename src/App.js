@@ -5,6 +5,7 @@ import WrongLetters from './components/WrongLetters';
 import Word from './components/Word';
 import Popup from './components/Popup';
 import Notification from './components/Notification';
+import { showNotification as show, checkWin } from './helpers/helpers';
 import { useEffect, useState } from 'react';
 
 const words = ['application', 'programming', 'interface', 'wizard'];
@@ -17,6 +18,7 @@ function App() {
   const [playable, setPlayable] = useState(true);
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
+  const [showNotification, setShowNotification] = useState(false);
 
   useEffect(() => {
     const handleKeydown = (event) => {
@@ -27,13 +29,13 @@ function App() {
           if (!correctLetters.includes(letter)) {
             setCorrectLetters((currentLetters) => [...currentLetters, letter]);
           } else {
-            // show(setShowNotification);
+            show(setShowNotification);
           }
         } else {
           if (!wrongLetters.includes(letter)) {
             setWrongLetters((currentLetters) => [...currentLetters, letter]);
           } else {
-            // show(setShowNotification);
+            show(setShowNotification);
           }
         }
       }
@@ -52,7 +54,7 @@ function App() {
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
       <Popup />
-      <Notification />
+      <Notification showNotification={showNotification} />
     </>
   );
 }
