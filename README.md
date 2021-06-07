@@ -46,5 +46,15 @@ Hang Man Game Build Using Modern React concepts like hooks, functional component
 
 
 
-![hangman2](https://user-images.githubusercontent.com/70085321/120995124-d52d1e80-c7a4-11eb-9f58-c5b2f4bf89c3.PNG)
+![hangman3](https://user-images.githubusercontent.com/70085321/120995126-d5c5b500-c7a4-11eb-9626-b09754d4f26f.PNG)
+
+
+
+
+
+
+
+
+Live Preview Of the Project : [Click Here](https://laughing-shannon-47ab98.netlify.app/)
+
 
